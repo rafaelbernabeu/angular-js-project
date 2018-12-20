@@ -10,7 +10,6 @@
         vm.go = go;
 
         function go() {
-            console.log('redirecionando');
             $state.go('my-app.welcome');
         }
     }

@@ -6,14 +6,15 @@
     /* @ngInject */
     function configRoutesApp($stateProvider) {
         $stateProvider
-            .state('my-app.user', {
-                url: '/userr',
-                controller: 'UserController',
-                controllerAs: 'usrController',
+            .state('user', {
                 abstract: true,
-                templateUrl: '/user/index.html',
-                resolve: {
-                }
+                templateUrl: 'index.html'
+            })
+            .state('user.welcome' ,{
+                url: '/user/welcome',
+                controller: 'UserController',
+                controllerAs: 'vm',
+                templateUrl: 'app/user/user.html'
             });
     }
 })();

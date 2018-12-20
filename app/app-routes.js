@@ -11,10 +11,10 @@
                 templateUrl: 'index.html'
             })
             .state('my-app.welcome' ,{
-                url: '/',
+                url: '/welcome',
                 controller: 'AppController',
-                controllerAs: 'appCtrl',
-                templateUrl: 'app.html'
+                controllerAs: 'vm',
+                templateUrl: 'app/app.html'
             });
     }
 })();

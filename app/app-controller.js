@@ -1,3 +1,4 @@
+
 (function(){
     angular
         .module('my-app.controller')
@@ -6,11 +7,13 @@
     function AppController($state){
         var vm = this;
         
-        go();
+        vm.go = go;
+
+        // go();
 
         function go() {
-            console.log('passou aqui!')
-            $state.go('my-app.user');
+            console.log('redirecionando');
+            $state.go('user.welcome');
         }
     }
 })();

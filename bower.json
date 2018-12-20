@@ -1,0 +1,21 @@
+{
+  "name": "angular-js-project",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Rafael <rbbernabeu@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/rafaelbernabeu/angular-js-project",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "1.7.5",
+    "angular-ui-router": "^1.0.20"
+  }
+}

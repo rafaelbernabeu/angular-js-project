@@ -9,9 +9,9 @@
         
         vm.go = go;
 
-        (function init () {
-            $state.go('my-app.welcome');
-        })();
+        // (function init () {
+        //     $state.go('my-app.welcome');
+        // })();
 
         function go() {
             $state.go('user.welcome');

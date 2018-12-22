@@ -4,7 +4,10 @@
         .config(configRoutesApp);
 
     /* @ngInject */
-    function configRoutesApp($stateProvider) {
+    function configRoutesApp($stateProvider, $urlRouterProvider) {
+
+        $urlRouterProvider.otherwise('/welcome');
+
         $stateProvider
             .state('my-app', {
                 abstract: true,

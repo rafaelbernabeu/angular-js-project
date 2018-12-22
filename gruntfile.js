@@ -138,15 +138,7 @@ module.exports = function (grunt) {
     }
   });
 
-  grunt.loadNpmTasks('grunt-contrib-connect');
-  grunt.loadNpmTasks('grunt-contrib-uglify');
-  grunt.loadNpmTasks('grunt-contrib-concat');
-  grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-connect-proxy');
-  grunt.loadNpmTasks('grunt-contrib-clean');
-  grunt.loadNpmTasks('grunt-contrib-copy');
-  grunt.loadNpmTasks("grunt-bower-concat");
-  grunt.loadNpmTasks('grunt-open');
+  require('load-grunt-tasks')(grunt);
 
-  grunt.registerTask('default', ['clean', 'copy', 'concat', 'bower_concat', 'uglify', 'clean:tmp', 'connect:livereload', 'open', 'watch']);
+  grunt.registerTask('default', ['clean', 'copy', 'concat', 'bower_concat', 'uglify', 'clean:tmp', 'configureProxies:server-proxy', 'connect:livereload', 'open', 'watch']);
 };

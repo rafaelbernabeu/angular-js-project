@@ -109,7 +109,7 @@ module.exports = function (grunt) {
     connect: {
       options: {
         port: 9002,
-        hostname: 'localhost',
+        hostname: '*',
       },
       livereload: {
         options: {

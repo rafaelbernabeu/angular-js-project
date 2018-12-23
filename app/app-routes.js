@@ -11,7 +11,6 @@
         $stateProvider
             .state('my-app', {
                 abstract: true,
-                templateUrl: 'index.html'
             })
             .state('my-app.welcome' ,{
                 url: '/welcome',

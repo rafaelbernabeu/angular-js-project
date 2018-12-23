@@ -10,12 +10,20 @@ module.exports = function (grunt) {
         separator: '\n'
       },
       js: {
-        src: ['app/**/*.js'],
+        src: ['app/**/*module.js', 'app/**/*.js'],
         dest: 'tmp/bundle.js'
       },
       css: {
         src: ['app/**/*.css'],
         dest: 'tmp/bundle.css'
+      },
+      'bootstrap-css': {
+        src: ['node_modules/bootstrap/dist/css/*.min.css'],
+        dest: 'build/bootstrap.min.css'
+      },
+      'bootstrap-js': {
+        src: ['node_modules/bootstrap/dist/bootstrap.bundle.min.js'],
+        dest: 'build/bootstrap.min.js'
       }
     },
     bower_concat: {

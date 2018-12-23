@@ -8,7 +8,6 @@
         $stateProvider
             .state('user', {
                 abstract: true,
-                templateUrl: 'index.html'
             })
             .state('user.welcome' ,{
                 url: '/user/welcome',
